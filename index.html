@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Formulário de cadastro</h1>
+    
+    <form action="/" method="POST" class='form'>
+      <label>Nome</label>
+      <input type="text" class="name toValidate" >
+      <label>Sobrenome</label>
+      <input type="text" class="secondName toValidate" >
+      <label>CPF</label>
+      <input type="text" class="cpf toValidate" >
+      <label>Data de nascimento</label>
+      <input type="date" class="birthday toValidate">
+      <div class="cepForm">
+        <label>CEP</label>
+        <input type="text" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" class="cep toValidate">
+      </div>
+      <label">Logradouro</label>
+      <input type="text" placeholder="Logradouro" data-tipo="street">
+      <label>Cidade</label>
+      <input type="text" placeholder="Cidade" data-tipo="city" >
+      <label>Estado</label>
+      <input type="text" placeholder="Estado" data-tipo="state" >
+      <label>Usuário</label>
+      <input type="text" class="user toValidate" >
+      <label>Senha</label>
+      <input type="password" class="password toValidate">
+      <label>Repetir Senha</label>
+      <input type="password" class="repeat-password toValidate" >
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="./assets/js/CpfValidate.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
